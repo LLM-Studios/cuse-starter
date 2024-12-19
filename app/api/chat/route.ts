@@ -11,6 +11,9 @@ export async function POST(req: Request) {
 
 	const computer = new Computer({
 		baseUrl: process.env.COMPUTER_API_URL || "http://localhost:9001",
+		displayNum: 1,
+		width: 1920,
+		height: 1080,
 	});
 
 	const system = `<SYSTEM_CAPABILITY>
