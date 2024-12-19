@@ -37,6 +37,7 @@ export default function Chat() {
 							<AIMessage
 								key={message.id}
 								content={message.content}
+								toolInvocations={message.toolInvocations}
 								onCopy={() => navigator.clipboard.writeText(message.content)}
 								onRegenerate={reload}
 							/>
